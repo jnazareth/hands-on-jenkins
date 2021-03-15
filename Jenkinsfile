@@ -9,12 +9,6 @@ pipeline {
 
     stage('Test Firefox') {
       parallel {
-        stage('Test Firefox') {
-          steps {
-            sh 'echo \'Testing Firefox\''
-          }
-        }
-
         stage('Test Chrome') {
           steps {
             sh 'echo \'Testing Chrome\''
