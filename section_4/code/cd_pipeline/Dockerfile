@@ -3,7 +3,7 @@ FROM alpine:3.7
 
 # Install python 3 and pip
 #RUN apk add --update python3
-RUN sudo yum install python3 pip3
+RUN yum install python3 pip3
 
 # Install Python modules needed by the Python app
 COPY requirements.txt /usr/src/app/
