@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('Test Firefox') {
+    stage('Testing Browsers') {
       parallel {
         stage('Test Chrome') {
           steps {
